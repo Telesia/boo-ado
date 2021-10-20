@@ -68,8 +68,13 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background:pink;
 	z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
 }
 
 /* -------------------------------- Media Queries */
