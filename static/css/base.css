@@ -103,6 +103,21 @@ a.category-badge > span.badge:hover {
     background: black;
     color: white !important;
 }
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right:15px;
+    z-index: 999999999999; /* makes sure it's on top of everything else in css */
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
