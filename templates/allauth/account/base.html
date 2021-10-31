@@ -1,1 +1,18 @@
 {% extends "base.html" %}
+
+<!-- will replace main allauth base.html template content block with our own -->
+
+{% block content %}
+    <div class="container header-container">
+        <div class="overlay"></div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="allauth-form-inner-content">
+                    <!-- create an inner block here and then head to each login/logout/password change etc html template and add block inner_content to it to splice into this new extension of the allauth base.html tempalte. Can also modify login/logout templates from allauth -->
+                    {% block inner_content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
